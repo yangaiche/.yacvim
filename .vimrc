@@ -16,6 +16,7 @@ Plug 'tpope/vim-surround'
 Plug 'mileszs/ack.vim'
 Plug 'dkprice/vim-easygrep'
 Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdcommenter'
 "Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 
 Plug 'sickill/vim-monokai'
@@ -127,5 +128,5 @@ function! InsertClosing(char)
   return ""
 endfunction
 inoremap ( (<C-R>=InsertClosing(')')<CR>
-
-
+" sudo write 
+cmap w!! w !sudo tee > /dev/null %
