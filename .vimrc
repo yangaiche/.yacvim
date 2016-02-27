@@ -50,14 +50,14 @@ Plug '~/my-prototype-plugin'
 " Add plugins to &runtimepath
 call plug#end()
 map <f4> :NERDTreeToggle<CR>
-
+map <F2> :e .<CR>
 :colorscheme monokai
 "let g:molokai_original = 1
 
 let mapleader=" "
 
 set clipboard=unnamed
-
+set relativenumber
 let g:Powerline_symbols = 'fancy'
 
 
